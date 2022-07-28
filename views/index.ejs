@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>URL Shortener</title>
+    <link rel="stylesheet" href="./css/style.css" type="text/css">
+</head>
+
+<body>
+    <div class="container">
+
+        <% if (locals.shortLink !=null) { %>
+            <div class="short_url_box">
+                Short URL
+                <a href="<%= locals.shortLink %>">
+                    <%= locals.shortLink %>
+                </a>
+            </div>
+            <% } %>
+
+                <div class="animation_card">
+                    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+                    <lottie-player src="https://assets9.lottiefiles.com/private_files/lf30_fhynbgue.json"
+                        background="transparent" speed="1" style="width: 80px; height: 80px;" autoplay></lottie-player>
+                </div>
+
+                <h2 class="heading"><span>S</span>hort <span>U</span>RL</h2>
+
+                <form method="POST" action="/">
+                    <input required type="url" placeholder="URL" name="longurl">
+                    <input type="submit" value="Short">
+                </form>
+    </div>
+    <script>
+        if (window.history.replaceState) {
+            window.history.replaceState(null, null, window.location.href);
+        }
+    </script>
+</body>
+
+</html>

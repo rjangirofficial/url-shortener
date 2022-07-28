@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background: #0652DD;
+    height: 90vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.animation_card {
+    background: white;
+    height: 80px;
+    width: 80px;
+    border-radius: 100%;
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
+.container .heading {
+    color: white;
+    font-weight: 100;
+    letter-spacing: 2px;
+    margin: 10px 0px;
+}
+
+.container .heading span {
+    font-size: 32px;
+}
+
+.container input[type="url"] {
+    width: 100%;
+    padding: 8px 10px;
+    border: none;
+    outline: none;
+    border-radius: 7px;
+
+}
+
+.container input[type="url"]:focus {
+    outline: 2px solid black;
+}
+
+.container input[type="submit"] {
+    width: 100%;
+    background: #0059ff;
+    border: none;
+    margin: 8px 0px;
+    color: white;
+    padding: 8px 10px;
+    border-radius: 7px;
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    cursor: pointer;
+}
+
+.short_url_box {
+    background: white;
+    padding: 5px 10px;
+    border-radius: 7px;
+    margin: 15px 10px;
+}
